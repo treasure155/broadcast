@@ -117,7 +117,7 @@ header {
     border-radius: 10px;
 }
 
-button:hover{
+button:hover {
     color: #fff;
     cursor: pointer;
     background-color: rgb(202, 0, 0);
@@ -129,6 +129,7 @@ button:hover{
     justify-content: center;
     padding: 40px 20px;
     background-color: #f4f4f4;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -139,7 +140,7 @@ button:hover{
     margin: 10px;
     max-width: 300px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -158,7 +159,7 @@ button:hover{
     color: #666;
 }
 
-.cards-section2{
+.cards-section2 {
     padding-left: 30px;
     background-color: #f4f4f4;
     padding: 10px 20px;
@@ -186,18 +187,17 @@ button:hover{
     padding: 20px;
     max-width: 200px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .icon-box i {
     font-size: 40px;
     color: #f03838;
     margin-bottom: 30px;
-
 }
 
-i:hover{
-color: rgb(13, 69, 125);
+i:hover {
+    color: rgb(13, 69, 125);
 }
 
 .icon-box h3 {
@@ -211,14 +211,14 @@ color: rgb(13, 69, 125);
     color: #666;
 }
 
-.cards-section3{
+.cards-section3 {
     padding-left: 30px;
     background-color: #f4f4f4;
     padding: 10px 20px;
     text-align: center;
 }
 
-.primary-navbar2{
+.primary-navbar2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -242,3 +242,156 @@ color: rgb(13, 69, 125);
     text-decoration: none;
     font-weight: bold;
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.footer-column .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column .menu li {
+    margin: 10px 0;
+}
+
+.footer-column .menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column .social-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-column .social-icons a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .primary-navbar .menu li {
+        margin-left: 10px;
+    }
+
+    .primary-navbar .logo img {
+        height: 80px;
+    }
+
+    .primary-navbar2 {
+        padding: 20px 10px 20px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .primary-navbar .menu li {
+        margin-left: 5px;
+    }
+
+    .primary-navbar .logo img {
+        height: 60px;
+    }
+
+    .hero-content {
+        padding-left: 20px;
+    }
+
+    .cards-section,
+    .icon-boxes {
+        flex-direction: column;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .primary-navbar .menu li {
+        margin-left: 0;
+    }
+
+    .primary-navbar .menu {
+        flex-direction: column;
+    }
+
+    .primary-navbar .logo img {
+        height: 50px;
+    }
+
+    .secondary-navbar {
+        flex-direction: column;
+    }
+
+    .social-icons a {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .footer-column {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .cards-section,
+    .icon-boxes {
+        padding: 20px 10px;
+    }
+
+    .primary-navbar {
+        padding: 10px;
+    }
+
+    .primary-navbar .logo img {
+        height: 40px;
+    }
+}
+
+/* 
+@media (max-width: 1200px): Adjusts styles for screens smaller than 1200px wide.
+@media (max-width: 992px): Adjusts styles for screens smaller than 992px wide.
+@media (max-width: 768px): Adjusts styles for screens smaller than 768px wide.
+@media (max-width: 576px): Adjusts styles for screens smaller than 576px wide.
+*/
